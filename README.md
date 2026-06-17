@@ -1,6 +1,9 @@
+Here's the complete README.md content in a single code block ready to copy:
+
+```markdown
 # Comparative Study of Optimization Algorithms for SLM Fine-Tuning
 
-##  Project Overview
+## Project Overview
 
 This project presents a comprehensive experimental comparison of five optimization algorithms for fine-tuning Small Language Models (SLMs), specifically **DistilBERT**, on a text classification task using the **AG News** dataset.
 
@@ -11,7 +14,7 @@ This project presents a comprehensive experimental comparison of five optimizati
 - **SGD with Momentum** – Classical stochastic gradient descent
 - **RMSProp** – Adaptive optimizer for non-stationary objectives
 
-##  Key Results
+## Key Results
 
 | Optimizer | Test Accuracy | Test F1 | Memory (MB) |
 |-----------|---------------|---------|-------------|
@@ -27,7 +30,8 @@ This project presents a comprehensive experimental comparison of five optimizati
 - **AdaFactor** is the most memory-efficient but requires careful tuning.
 - **Lion** showed the lowest performance despite memory advantages.
 
-##  Requirements
+## Requirements
+
 Python 3.8+
 PyTorch
 Transformers
@@ -37,79 +41,70 @@ Scikit-learn
 Matplotlib
 Pandas
 
-text
+## Repository Structure
 
-##  Repository Structure
-├── comparaison-optimisateurs.ipynb # Main Jupyter Notebook
+```
+├── comparaison-optimisateurs.ipynb   # Main Jupyter Notebook
 ├── README.md
-├── screen/ # Generated figures
-│ ├── 1.png # Loss/accuracy curves
-│ ├── 2.png # Step-wise loss
-│ ├── 3.png # Resource consumption
-│ └── 4.png # Learning rate sensitivity
-└── references.bib # Bibliography
+├── screen/                           # Generated figures
+│   ├── 1.png                         # Loss/accuracy curves
+│   ├── 2.png                         # Step-wise loss
+│   ├── 3.png                         # Resource consumption
+│   └── 4.png                         # Learning rate sensitivity
+└── references.bib                    # Bibliography
+```
 
-text
-
-##  How to Run
+## How to Run
 
 1. **Clone the repository**
 ```bash
 git clone https://github.com/your-username/optimization-algorithms-slm-finetuning.git
 cd optimization-algorithms-slm-finetuning
-Install dependencies
-
 ```
+
+2. **Install dependencies**
 ```bash
 pip install -q transformers datasets accelerate evaluate lion-pytorch scikit-learn matplotlib pandas
-Run the notebook
 ```
+
+3. **Run the notebook**
 ```bash
 jupyter notebook comparaison-optimisateurs.ipynb
- Generated Results
 ```
+
+## Generated Results
+
 The notebook automatically generates:
+- Comparative performance tables
+- Loss and accuracy evolution curves
+- Resource consumption bar charts
+- Learning rate sensitivity plots
+- Multi-seed stability analysis
 
-Comparative performance tables
+## Key Findings
 
-Loss and accuracy evolution curves
+- **RMSProp** emerges as the best overall optimizer for this setup.
+- **AdaFactor** is recommended for memory-constrained environments.
+- **AdamW** is a safe choice but consumes the most memory.
+- **Lion** requires careful tuning and showed lower performance.
+- **SGD-M** can perform well but is highly sensitive to learning rates.
 
-Resource consumption bar charts
+## Authors
 
-Learning rate sensitivity plots
+- BOUSSAID Salama
+- CHAABAN Malika
+- BOUNADAR Douaa
 
-Multi-seed stability analysis
+## Supervision
 
+- **Pr. Faouzia Benabbou**
+- Master Intelligence Artificielle - FSBM
+- Module Optimization
+- Academic Year: 2025-2026
 
-Key Findings
-RMSProp emerges as the best overall optimizer for this setup.
+## References
 
-AdaFactor is recommended for memory-constrained environments.
-
-AdamW is a safe choice but consumes the most memory.
-
-Lion requires careful tuning and showed lower performance.
-
-SGD-M can perform well but is highly sensitive to learning rates.
-
- Authors
-BOUSSAID Salama
-
-CHAABAN Malika
-
-BOUNADAR Douaa
-
- Supervision
-Pr. Faouzia Benabbou
-
-Master Intelligence Artificielle - FSBM
-
-Module Optimization
-
-Academic Year: 2025-2026
-
- References
-text
+```bibtex
 @inproceedings{kingma2015adam,
   title={Adam: A Method for Stochastic Optimization},
   author={Kingma, Diederik P and Ba, Jimmy},
@@ -144,17 +139,9 @@ text
   booktitle={NeurIPS},
   year={2023}
 }
- License
+```
+
+## License
+
 This project is for educational purposes as part of the Master Intelligence Artificielle program at FSBM.
-
-text
-
----
-
-## **Short Description (for GitHub)**
-A comparative study of optimization algorithms (AdamW, AdaFactor, Lion, SGD-M, RMSProp) for fine-tuning SLMs (DistilBERT) on AG News classification. Includes Jupyter notebook, experimental results, analysis, and LaTeX report.
-
-text
-
-## **Tags**
-optimization, deep-learning, transformers, distilbert, slm, fine-tuning, adamw, adafactor, lion, sgd, rmsprop, nlp, classification, ag-news
+```
