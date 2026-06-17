@@ -43,7 +43,7 @@ Pandas
 
 ## Repository Structure
 
-```
+
 ├── comparaison-optimisateurs.ipynb   # Main Jupyter Notebook
 ├── README.md
 ├── screen/                           # Generated figures
@@ -52,7 +52,7 @@ Pandas
 │   ├── 3.png                         # Resource consumption
 │   └── 4.png                         # Learning rate sensitivity
 └── references.bib                    # Bibliography
-```
+
 
 ## How to Run
 
