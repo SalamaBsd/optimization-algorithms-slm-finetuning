@@ -48,7 +48,7 @@ Pandas
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/optimization-algorithms-slm-finetuning.git
+git clone https://github.com/SalamaBsd/optimization-algorithms-slm-finetuning
 cd optimization-algorithms-slm-finetuning
 ```
 
