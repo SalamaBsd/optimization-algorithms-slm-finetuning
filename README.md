@@ -59,13 +59,15 @@ git clone https://github.com/your-username/optimization-algorithms-slm-finetunin
 cd optimization-algorithms-slm-finetuning
 Install dependencies
 
-bash
+```
+```bash
 pip install -q transformers datasets accelerate evaluate lion-pytorch scikit-learn matplotlib pandas
 Run the notebook
-
-bash
+```
+```bash
 jupyter notebook comparaison-optimisateurs.ipynb
  Generated Results
+```
 The notebook automatically generates:
 
 Comparative performance tables
