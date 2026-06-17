@@ -1,6 +1,3 @@
-Here's the complete README.md content in a single code block ready to copy:
-
-```markdown
 # Comparative Study of Optimization Algorithms for SLM Fine-Tuning
 
 ## Project Overview
@@ -46,13 +43,6 @@ Pandas
 
 ├── comparaison-optimisateurs.ipynb   # Main Jupyter Notebook
 ├── README.md
-├── screen/                           # Generated figures
-│   ├── 1.png                         # Loss/accuracy curves
-│   ├── 2.png                         # Step-wise loss
-│   ├── 3.png                         # Resource consumption
-│   └── 4.png                         # Learning rate sensitivity
-└── references.bib                    # Bibliography
-
 
 ## How to Run
 
